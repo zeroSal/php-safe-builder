@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service;
+namespace Sal\SafeBuilder\Builder;
 
 /**
  * @author Luca Saladino <sal65535@protonmail.com>

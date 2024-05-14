@@ -1,0 +1,30 @@
+{
+    "name": "sal/php-safe-builder",
+    "description": "PHP safe string builder.",
+    "type": "library",
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.56",
+        "phpstan/phpstan": "^1.11"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sal\\SafeBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luca Saladino",
+            "email": "sal65535@protonmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "fix-code": [
+            "vendor/bin/php-cs-fixer fix src/"
+        ],
+        "verify-code": [
+            "php -d memory_limit=1024M vendor/bin/phpstan analyse src --level 4"
+        ]
+    }
+}

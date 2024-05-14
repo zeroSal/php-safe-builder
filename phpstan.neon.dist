@@ -1,0 +1,14 @@
+parameters:
+    exceptions:
+        check:
+            missingCheckedExceptionInThrows: true
+            tooWideThrowType: true
+        implicitThrows: true
+        uncheckedExceptionClasses:
+            - 'LogicException'
+    tmpDir: .phpstan.cache/
+    level: 4
+    excludePaths:
+        - vendor/
+    paths:
+        - src/
